@@ -10,20 +10,12 @@ from typing import Dict
 sys.path.append("mods")
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtWidgets import QGraphicsScene, QGraphicsView
 from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout
-from PyQt5.QtWidgets import QPushButton, QLabel, QMessageBox
 
 from widget_scr import WidgetScreen
 from widget_ctl import WidgetCtrl
 from widget_files import WidgetFiles
-
-from fsys import ReadBinaryFile
-from gui import QButtonLink
-from zxcolors import ZXColors, byte_to_pixels
-from zxmem import zxscr_lineaddr
 
 
 class WidgetZXScr(QWidget):
@@ -101,4 +93,3 @@ if __name__ == '__main__':
     wdgScrViewer.show()
     app.exec()
     exit(0)
-
