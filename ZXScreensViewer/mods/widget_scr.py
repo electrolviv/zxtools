@@ -25,7 +25,7 @@ class WidgetScreen(QWidget):
     def loadFile(self, fname) -> bytearray:
         r = ReadBinaryFile(fname)
         if len(r) < 1024:
-            buttonReply = QMessageBox.question(
+            QMessageBox.question(
                 self, 'File :%s' % fname, "Not valid .scr file",
                 QMessageBox.Ok, QMessageBox.Ok)
         return r
